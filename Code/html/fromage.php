@@ -17,7 +17,7 @@ try {
 /* Initialisation des varibales pour l'ensemble du code PHP */
 
 $img = "";
-$reqFromage = $conn->query('SELECT * FROM fromage;');
+$reqFromage = $conn->query('SELECT * FROM Fromage;');
 ?>
 
 
@@ -102,13 +102,22 @@ $reqFromage = $conn->query('SELECT * FROM fromage;');
 
             <div class="container_fromage">
                 <?php while ($req = $reqFromage->fetch()) { ?>
-                    <a href="detail.php">
-                        <div class="fromage">
-                            <?php echo '<img src="../images/' . $req['image'] . '" alt="Image de ' . $req['image'] . '">' ?>
-                            <h1><?= $req['nom'] ?></h1>
-                            <form method=""><i class="fa-regular fa-star"></i></form>
-                        </div>
-                    </a>
+
+                    <form action="detail.php" method="POST" class="form">
+                        <button type="submit" class="button_detail" name="form_detail">
+                            <div class="fromage">
+                                <?php echo '<img src="../images/' . $req['image'] . '" alt="Image de ' . $req['image'] . '">' ?>
+                                <div class="nom_departement">
+                                    <h1><?= $req['nom'] ?></h1>
+                                    <h4><?= $req['departementfabrication'] ?></h4>
+                                </div>
+                                <i class="fa-regular fa-star"></i>
+                                <input type="hidden" name="nomFromage" value="<?= $req['nom'] ?>">
+                                <input type="hidden" name="departementFabrication" value="<?= $req['departementfabrication'] ?>">
+                            </div>
+                        </button>
+                    </form>
+
                 <?php } ?>
             </div>
 

@@ -20,18 +20,28 @@
 .container_fromage{ /* Css de la liste de fromage */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     flex-direction: column;
     width: 100%;
+}
+
+form{
+    margin: 1%;
 }
 
 .fromage{ /* Css d'un élément fromage de la liste */
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
     border: 3px solid black;
     margin: 2%;
+}
+
+.button_detail{
+    width: 100%;
+    background-color: #fff;
+    border: none;
 }
 
 .fromage img{
