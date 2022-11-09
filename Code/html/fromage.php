@@ -16,7 +16,6 @@ try {
 
 /* Initialisation des varibales pour l'ensemble du code PHP */
 
-$img = "";
 $reqFromage = $conn->query('SELECT * FROM Fromage;');
 ?>
 
