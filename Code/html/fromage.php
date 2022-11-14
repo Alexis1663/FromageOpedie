@@ -16,7 +16,6 @@ try {
 
 /* Initialisation des varibales pour l'ensemble du code PHP */
 
-$img = "";
 $reqFromage = $conn->query('SELECT * FROM Fromage;');
 ?>
 
@@ -112,8 +111,8 @@ $reqFromage = $conn->query('SELECT * FROM Fromage;');
                                     <h4><?= $req['departementfabrication'] ?></h4>
                                 </div>
                                 <i class="fa-regular fa-star"></i>
-                                <input type="hidden" name="nomFromage" value="<?= $req['nom'] ?>">
-                                <input type="hidden" name="departementFabrication" value="<?= $req['departementfabrication'] ?>">
+                                <input type="hidden" name="nomFromage" value="<?= $conn->quote($req['nom']) ?>">
+                                <input type="hidden" name="departementFabrication" value="<?= $conn->quote($req['departementfabrication']) ?>">
                             </div>
                         </button>
                     </form>
