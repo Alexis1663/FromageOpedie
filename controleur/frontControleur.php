@@ -10,7 +10,7 @@ class FrontControleur {
 
   private $ctrlVisitor;
   private $ctrlUser;
-  private $ctrlAdmin
+  private $ctrlAdmin;
 
   public function __construct() {
     $this->ctrlVisitor = new VisitorControleur();
