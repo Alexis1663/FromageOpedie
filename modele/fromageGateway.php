@@ -17,17 +17,17 @@ class FromageGateway{
 
 		$results=$this->con->getResults();
 		Foreach ($results as $row)
-		$Tab_Fromages_FindAll[]=new Article($row['image'],$row['nom'],$row['departementFabrication']);
+		$Tab_Fromages_FindAll[]=new Fromage($row['image'],$row['nom'],$row['departementFabrication']);
 		Return $Tab_Fromages_FindAll;
 	}
 
 	public function find(string $nom){
-		$queryfind = "SELECT * FROM Article WHERE nom=:nom";
+		$queryfind = "SELECT * FROM Fromage WHERE nom=:nom";
 		$this->con->executeQuery($queryfind,  array(':image'=>array($image,PDO:PARAM_STR), 'nom'=>array($nom,PDO:PARAM_STR), 'departementFabrication'=>array($departementFabrication,PDO:PARAM_STR) ));
 
 		$results=$this->con->getResults();
 		Foreach ($results as $row)
-		$Tab_Fromages_Find[]=new Article($row['image'],$row['nom'],$row['departementFabrication']);
+		$Tab_Fromages_Find[]=new Fromage($row['image'],$row['nom'],$row['departementFabrication']);
 		Return $Tab_Fromages_Find;
 	}
 
@@ -37,7 +37,7 @@ class FromageGateway{
 
 		$results=$this->con->getResults();
 		Foreach ($results as $row)
-		$Tab_Fromages_SortZA[]=new Article($row['image'],$row['nom'],$row['departementFabrication']);
+		$Tab_Fromages_SortZA[]=new Fromage($row['image'],$row['nom'],$row['departementFabrication']);
 		Return $Tab_Fromages_SortZA;
 	}
 
@@ -47,7 +47,7 @@ class FromageGateway{
 
 		$results=$this->con->getResults();
 		Foreach ($results as $row)
-		$Tab_Fromages_SortDep=new Article($row['image'],$row['nom'],$row['departementFabrication']);
+		$Tab_Fromages_SortDep=new Fromage($row['image'],$row['nom'],$row['departementFabrication']);
 		Return $Tab_Fromages_SortDep;
 	}
 
@@ -57,7 +57,7 @@ class FromageGateway{
 
 		$results=$this->con->getResults();
 		Foreach ($results as $row)
-		$Tab_Fromages_SortLait=new Article($row['image'],$row['nom'],$row['departementFabrication']);
+		$Tab_Fromages_SortLait=new Fromage($row['image'],$row['nom'],$row['departementFabrication']);
 		Return $Tab_Fromages_SortLait;
 	}
 
