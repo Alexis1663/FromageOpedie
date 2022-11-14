@@ -4,8 +4,7 @@ class Fromage{
 
 	private string $nom;
 	private string $description;
-	//private array $departements;
-	//private array $fromageries;
+	private array $fromageries;
 
 	public function __construct(string $nom, string $description){
 		$this->nom=$nom;
@@ -19,6 +18,11 @@ class Fromage{
 	public function __getDescription()):string{
 		return $this->description;
 	}
+	
+	public function __getFromageries():array{
+        	return $this->fromageries;
+    	}
+
 }
 
 ?>
