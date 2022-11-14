@@ -1,6 +1,6 @@
 <?php
 	
-class Fromage{
+class Itineraire{
 
 	private string $nom;
 	private string $description;
