@@ -21,7 +21,7 @@ class FromageGateway{
 		Return $Tab_Fromages_FindAll;
 	}
 
-	public function find(string $nom){
+	public function find(string $nom):array{
 		$queryfind = "SELECT * FROM Fromage WHERE nom=:nom";
 		$this->con->executeQuery($queryfind,  array(':image'=>array($image,PDO:PARAM_STR), 'nom'=>array($nom,PDO:PARAM_STR), 'departementFabrication'=>array($departementFabrication,PDO:PARAM_STR) ));
 
