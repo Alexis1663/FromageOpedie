@@ -2,6 +2,7 @@
 
 require 'user.php';
 require 'departement.php';
+require 'fromage.php';
 	
 class Fromagerie{
 
@@ -9,14 +10,16 @@ class Fromagerie{
 	private string $adresse;
 	private User $user;
 	private Departement $departement;
-	private $fromagesVendus = array(); 
+	private int $position;
+	private array $listeFromage; 
 
-	public function __construct(string $nom, string $departementFabrication, User $adresse, Departement $departement){
+	public function __construct(string $nom, string $adresse, User $user, Departement $departement, int $position, array $listeFromage){
 		$this->nom=$nom;
 		$this->adresse=$adresse;
 		$this->user=$user;
 		$this->departement=$departement;
-		//$this->fromagesVendus=new array(Fromage);
+		$this->position=$position;
+		$this->listeFromage=$listeFromage;
 	}
 
 	public function __getNom():string{
@@ -33,6 +36,14 @@ class Fromagerie{
 
 	public function __getDepartement():Departement{
 		return $this->departement;
+	}
+
+	public function __getPosition():int{
+		return $this->position;
+	}
+
+	public function __getListeFromage():array{
+		return $this->listeFromage;
 	}
 }
 
