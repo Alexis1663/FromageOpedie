@@ -54,7 +54,19 @@
     					document.getElementById("dep").innerHTML=name;
 	   				}
     			</script>
-    	</div>
+    	<div>
+			<script>
+				function display_image(src, width, height, alt) {
+				var a = document.createElement("img");
+				a.src = document.getElementById("dep").innerHTML=source;
+				a.width = width;
+				a.height = height;
+				a.alt = alt;
+				document.body.appendChild(a);
+				}
+				display_image(source,276,110,'JavaScriptImage');
+			</script>
+		</div>
 
 
     <!-- La carte -->
