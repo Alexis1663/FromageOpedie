@@ -1,0 +1,106 @@
+/* Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+/* Code */
+
+/* EnTete */
+
+.entete{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+}
+
+.image{
+    display: flex;
+}
+
+.titre{
+    display: flex;
+    font-size: xx-large;
+}
+
+.moyenne{
+    display: flex;
+    font-size: x-large;
+}
+
+/* Corps */
+
+.corps{
+    display: flex;
+    justify-content: space-between;
+}
+
+.informations{
+    margin-left: 20px;
+}
+
+.departement{
+    line-height: 10px;
+    margin-bottom: 50px;
+}
+
+.lait{
+    line-height: 10px;
+    margin-bottom: 50px;
+}
+
+.vin{
+    line-height: 10px;
+}
+
+h3{
+    margin-left: 50px;
+}
+
+.avis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align align-items: center;
+}
+
+.note{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    font-size: x-large;
+}
+
+.etoile {
+    width: 200px;
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+.etoile a {
+    float:right;
+    color: gray;
+    text-decoration: none;
+}
+
+.etoile a:hover,
+.etoile a:hover ~ a,
+.etoile a:focus,
+.etoile a:focus ~ a {
+    color: gold;
+    cursor: pointer;
+}
+
+.etoile2 {
+    direction: rtl;
+}
+
+.etoile2 a {
+    float:none
+}
+
+.wiki{
+    display: flex;
+    align-items: flex-end;
+    margin-right: 20px;
+}

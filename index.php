@@ -16,6 +16,7 @@ Autoload::charger();
 require_once(__DIR__ . '/controleur/frontControleur.php');
 
 $cont = new FrontControleur();
+$cont->frontRequest();
 
 
 ?> 

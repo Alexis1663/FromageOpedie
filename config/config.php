@@ -20,7 +20,6 @@ $dns = "pgsql:host=$host;dbname=$dbname;";
 
 //Vues
 
-$vues['erreur'] = 'vue/erreur.php';
-$vues['vuephp1'] = 'vue/vuephp1.php';
+$vue['accueil'] = 'vue\html\accueil.php';
 
 ?>
