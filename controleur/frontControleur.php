@@ -22,11 +22,46 @@ class FrontControleur
     }
 
     // Traite une requête entrante
-    public function frontRequest()
-    {
-        global $vue;
-        require($vue['accueil']);
+  public function frontRequest(){
+    $pageDemandee = $_GET['pageDemandee'];
+    switch($pageDemandee){
+      case "accueil.php":
+        require("accueil.php");
+        break;
+      
+      case "fromages.php":
+        require("fromages.php");
+        break;
+ 
+      case "details.php":
+        require("details.php");
+        break;
+
+      case "carte.php":
+        require("carte.php");
+        break;
+      
+      case "favoris.php":
+        require("favoris.php");
+        break;
+      
+      case "histoire.php":
+        require("histoire.php");
+        break;
+      
+      case "connexion.php":
+        require("connexion.php");
+        break;
+      
+      case "inscription.php":
+        require("inscription.php");
+        break;      
+
+      default :
+        require("accueil.php");
+        break;
     }
+  }
 
     /* Affiche une erreur
   private function erreur($msgErreur) {
