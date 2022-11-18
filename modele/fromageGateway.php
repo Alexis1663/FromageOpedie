@@ -58,6 +58,21 @@ class FromageGateway
         return $results;
     }
 
-    //public function sortNote():array;
+    public function sortNote():array{
+		$querysortnote="SELECT * FROM Fromage ORDER BY note DESC";
+		$this->con->executeQuery($querysortnote);
+		
+		$results=$this->con->getResults();
+		return $results;
+	}
+
+    public function sortPate(): array
+    {
+        $querysortpate = "SELECT * FROM Fromage ORDER BY pate ASC";
+        $this->con->executeQuery($querysortpate);
+
+        $results = $this->con->getResults();
+        return $results;
+    }
 
 }
