@@ -44,7 +44,7 @@ $reqFromage = $conn->query('SELECT * FROM fromage;');
         <nav>
 
             <div class="titre">
-                <a href="accueil.html">
+                <a href="accueil.php">
                     <h1>FromageOpédie</h1>
                 </a>
             </div>
@@ -56,7 +56,7 @@ $reqFromage = $conn->query('SELECT * FROM fromage;');
                 <a href="favoris.php">
                     <p>Favoris</p>
                 </a>
-                <a href="histoire.html">
+                <a href="histoire.php">
                     <p>Histoire</p>
                 </a>
                 <a href="carte.php">

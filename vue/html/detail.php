@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../css/header_footer.css">
     <title>FromageOpédie</title>
 </head>
+
 <body>
 
     <!-- Début de l'entête de page -->
@@ -17,14 +19,24 @@
         <nav>
 
             <div class="titre">
-                <a href="accueil.html"><h1>FromageOpédie</h1></a>
+                <a href="accueil.php">
+                    <h1>FromageOpédie</h1>
+                </a>
             </div>
 
             <div class="onglets">
-                <a href="fromage.php"><p>Fromages</p></a>
-                <a href="favoris.php"><p>Favoris</p></a>
-                <a href="histoire.html"><p>Histoire</p></a>
-                <a href="carte.php"><p>Carte</p></a>
+                <a href="fromage.php">
+                    <p>Fromages</p>
+                </a>
+                <a href="favoris.php">
+                    <p>Favoris</p>
+                </a>
+                <a href="histoire.php">
+                    <p>Histoire</p>
+                </a>
+                <a href="carte.php">
+                    <p>Carte</p>
+                </a>
             </div>
 
             <div class="log">
@@ -58,17 +70,17 @@
 
         <div class="corps">
 
-            <div class="informations">    
+            <div class="informations">
                 <div class="departement">
                     <h2>Département :</h2>
                     <h3>Puy-de-Dôme</h3>
                 </div>
-                
+
                 <div class="lait">
                     <h2>Type de lait :</h2>
                     <h3>Vache</h3>
                 </div>
-                
+
                 <div class="vin">
                     <h2>Vin associé :</h2>
                     <h3>Rouge sec</h3>
@@ -79,13 +91,18 @@
                 <div class="note">
                     <h2>Noter ce fromage !</h2>
 
-                        <div class="etoile etoile2"><!--
-                            --><a href="#5" title="5/5">★</a><!--
-                            --><a href="#4" title="4/5">★</a><!--
-                            --><a href="#3" title="3/5">★</a><!--
-                            --><a href="#2" title="2/5">★</a><!--
+                    <div class="etoile etoile2">
+                        <!--
+                            --><a href="#5" title="5/5">★</a>
+                        <!--
+                            --><a href="#4" title="4/5">★</a>
+                        <!--
+                            --><a href="#3" title="3/5">★</a>
+                        <!--
+                            --><a href="#2" title="2/5">★</a>
+                        <!--
                             --><a href="#1" title="1/5">★</a>
-                        </div>
+                    </div>
 
                 </div>
 
@@ -110,12 +127,12 @@
 
             <div class="foot1">
                 <h3>Contact</h1>
-                <p>exemple@exemple.fr</p>
+                    <p>exemple@exemple.fr</p>
             </div>
-    
+
             <div class="foot2">
                 <h3>A propos</h1>
-                <p>Iut Clermont-Ferrand</p>
+                    <p>Iut Clermont-Ferrand</p>
             </div>
 
         </div>
@@ -123,4 +140,5 @@
     </footer>
 
 </body>
+
 </html>

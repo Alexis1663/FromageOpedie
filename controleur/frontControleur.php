@@ -2,11 +2,9 @@
 
 //require_once('controleur/accueilControleur.php');
 //require_once('controleur/adminControleur.php');
-include('controleur/fromageControleur.php');
+//require_once('fromageControleur.php');
 //require_once('controleur/userControleur.php');
 //require_once('controleur/visitorControleur.php');
-
-require_once('config\config.php');
 
 
 class FrontControleur

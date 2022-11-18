@@ -20,7 +20,7 @@
         <nav>
 
             <div class="titre">
-                <a href="accueil.html">
+                <a href="accueil.php">
                     <h1>FromageOpédie</h1>
                 </a>
             </div>
@@ -32,7 +32,7 @@
                 <a href="favoris.php">
                     <p>Favoris</p>
                 </a>
-                <a href="histoire.html">
+                <a href="histoire.php">
                     <p>Histoire</p>
                 </a>
                 <a href="carte.php">

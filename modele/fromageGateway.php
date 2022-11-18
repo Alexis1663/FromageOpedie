@@ -1,7 +1,7 @@
 <?php
 
-include 'fromage.php';
-include 'connection.php';
+require_once('fromage.php');
+require_once('connection.php');
 
 class FromageGateway
 {
