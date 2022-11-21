@@ -1,71 +1,52 @@
 <?php
 
-//require_once('controleur/accueilControleur.php');
-//require_once('controleur/adminControleur.php');
-//require_once('fromageControleur.php');
-//require_once('controleur/userControleur.php');
-//require_once('controleur/visitorControleur.php');
+require_once 'controleur/userControleur';
+require_once 'controleur/adminControleur';
+require_once 'controleur/';
+require_once 'vue/';
 
+class FrontControleur {
 
-class FrontControleur
-{
-    private $ctrlAccueil;
-    private $ctrlAdmin;
-    private $ctrlFromage;
-    private $ctrlUser;
-    private $ctrlVisitor;
+  var $controleur;
 
-    public function __construct()
-    {
-        global $user, $password, $dns;
-        $this->ctrlFromage = new FromageControleur($dns, $user, $password);
-    }
-
-    // Traite une requête entrante
-  public function frontRequest(){
-    $pageDemandee = $_GET['pageDemandee'];
-    switch($pageDemandee){
-      case "accueil.php":
-        require("accueil.php");
+  public function __construct() {
+    session_start();
+    Autoload::charger();
+    
+    //on récupère le role de l'utilisateur et on initie le bon controleur en conséquence
+    $role = $_SESSION['role'];
+    switch($role){
+      case "Admin":
+        $controleur= new AdminControleur();
         break;
       
-      case "fromages.php":
-        require("fromages.php");
-        break;
- 
-      case "details.php":
-        require("details.php");
+      case "User":
+        $controleur= new UserControleur();
         break;
 
-      case "carte.php":
-        require("carte.php");
+      default:
         break;
-      
-      case "favoris.php":
-        require("favoris.php");
-        break;
-      
-      case "histoire.php":
-        require("histoire.php");
-        break;
-      
-      case "connexion.php":
-        require("connexion.php");
-        break;
-      
-      case "inscription.php":
-        require("inscription.php");
-        break;      
+      }
 
-      default :
-        require("accueil.php");
-        break;
+    //On récupère l'action dans la session
+    $action = $_SESSION['action'];
+    //On vérifie que l'action existe 
+    if(isset($action)){
+      //On vérifie que le controleur en question à le droit de faire l'action
+      if(method_exists($controleur, $action)){
+        //On appelle la méthode
+        $controleur->$action();
+      }else{
+        //On affiche une erreur si le controleur n'a pas le droit de faire l'action
+        $dVueEreur[] =	"Erreur 403 : Accès interdit (Forbidden) ";
+	      require ($vues['erreur']); //là j'ai fait un peu comme dans l'exemple mais il faudra peut être changer
+      }
+    }else{
+      //Si l'action n'existe pas, on affiche une erreur
+      $dVueEreur[] =	"Erreur 404 : Page non trouvée (Not Found) ";
+	    require ($rep.$vues['erreur']);
     }
   }
-
-    /* Affiche une erreur
-  private function erreur($msgErreur) {
-    $vue = new Vue("Erreur");
-    $vue->generer(array('msgErreur' => $msgErreur));
-  }*/
 }
+?>
+
