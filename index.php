@@ -10,13 +10,10 @@ require_once(__DIR__ . '/config/config.php');
 
 //chargement autoloader pour autochargement des classes
 require_once(__DIR__ . '/config/Autoload.php');
-Autoload::charger();
 
 //chargement FrontControleur
 require_once(__DIR__ . '/controleur/frontControleur.php');
 
 $cont = new FrontControleur();
-$cont->frontRequest();
-
 
 ?> 
