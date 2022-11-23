@@ -103,11 +103,22 @@ $reqFromage = $conn->query('SELECT * FROM fromage;');
 
             <div class="container_fromage">
                 <?php while ($req = $reqFromage->fetch()) { ?>
-                    <div class="fromage">
-                        <?php echo '<img src="../images/' . $req['image'] . '" alt="Image de ' . $req['image'] . '">' ?>
-                        <h1><?= $req['nom'] ?></h1>
-                        <form method=""><i class="fa-regular fa-star"></i></form>
-                    </div>
+
+                    <form action="index.php?page=detail" method="POST" class="form">
+                        <button type="submit" class="button_detail" name="form_detail">
+                            <div class="fromage">
+                                <?php echo '<img src="../images/' . $req['image'] . '" alt="Image de ' . $req['image'] . '">' ?>
+                                <div class="nom_departement">
+                                    <h1><?= $req['nom'] ?></h1>
+                                    <h4><?= $req['departementfabrication'] ?></h4>
+                                </div>
+                                <i class="fa-regular fa-star"></i>
+                                <input type="hidden" name="nomFromage" value="<?= $req['nom'] ?>">
+                                <input type="hidden" name="departementFabrication" value="<?= $req['departementfabrication'] ?>">
+                            </div>
+                        </button>
+                    </form>
+
                 <?php } ?>
             </div>
 
