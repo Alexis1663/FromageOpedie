@@ -19,29 +19,29 @@
         <nav>
 
             <div class="titre">
-                <a href="./accueil.php">
+                <a href="index.php?page=accueil">
                     <h1>FromageOpédie</h1>
                 </a>
             </div>
 
             <div class="onglets">
-                <a href="fromage.php">
+                <a href="index.php?page=fromage">
                     <p>Fromages</p>
                 </a>
-                <a href="favoris.php">
+                <a href="index.php?page=favoris">
                     <p>Favoris</p>
                 </a>
-                <a href="histoire.php">
+                <a href="index.php?page=histoire">
                     <p>Histoire</p>
                 </a>
-                <a href="carte.php">
+                <a href="index.php?page=carte">
                     <p>Carte</p>
                 </a>
             </div>
 
             <div class="log">
-                <a href="connexion.php">Connexion</a>
-                <a href="inscription.php">Inscription</a>
+                <a href="index.php?page=connexion">Connexion</a>
+                <a href="index.php?page=inscription">Inscription</a>
             </div>
 
         </nav>

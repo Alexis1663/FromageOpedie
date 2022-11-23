@@ -21,12 +21,12 @@ $dns = "pgsql:host=$host;dbname=$dbname;";
 //Vues
 
 $vue['accueil'] = 'vue/html/accueil.php';
-$vue['carte'] = 'vue\html\carte.php';
-$vue['connexion'] = 'vue\html\connexion.php';
-$vue['detail'] = 'vue\html\detail.php';
-$vue['favoris'] = 'vue\html\favoris.php';
-$vue['fromage'] = 'vue\html\fromage.php';
-$vue['histoire'] = 'vue\html\histoire.php';
-$vue['inscription'] = 'vue\html\inscription.php';
+$vue['carte'] = 'vue/html/carte.php';
+$vue['connexion'] = 'vue/html/connexion.php';
+$vue['detail'] = 'vue/html/detail.php';
+$vue['favoris'] = 'vue/html/favoris.php';
+$vue['fromage'] = 'vue/html/fromage.php';
+$vue['histoire'] = 'vue/html/histoire.php';
+$vue['inscription'] = 'vue/html/inscription.php';
 
 ?>
