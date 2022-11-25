@@ -6,25 +6,25 @@ require 'departement.php';
 class Fromagerie{
 
 	private string $nom;
-	private string $adresse;
+	private string $ville;
 	private User $user;
 	private Departement $departement;
-	private $fromagesVendus = array(); 
+	private $fromagesVendus = array();
 
-	public function __construct(string $nom, string $departementFabrication, User $adresse, Departement $departement){
+	public function __construct(string $nom, string $ville, User $user, Departement $departement, array $fromagesVendus){
 		$this->nom=$nom;
-		$this->adresse=$adresse;
+		$this->ville=$ville;
 		$this->user=$user;
 		$this->departement=$departement;
-		//$this->fromagesVendus=new array(Fromage);
+		$this->fromagesVendus=$fromagesVendus;
 	}
 
 	public function __getNom():string{
 		return $this->nom;
 	}
 
-	public function __getAdresse():string{
-		return $this->adresse;
+	public function __getVille():string{
+		return $this->ville;
 	}
 
 	public function __getUser():User{
@@ -33,6 +33,10 @@ class Fromagerie{
 
 	public function __getDepartement():Departement{
 		return $this->departement;
+	}
+
+	public function __getFromagesVendus():array{
+		return $this->fromagesVendus;
 	}
 }
 
