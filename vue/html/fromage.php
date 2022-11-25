@@ -16,8 +16,7 @@ try {
 
 /* Initialisation des varibales pour l'ensemble du code PHP */
 
-$img = "";
-$reqFromage = $conn->query('SELECT * FROM fromage;');
+include_once('controleur/frontControleur.php');
 
 ?>
 
@@ -89,20 +88,23 @@ $reqFromage = $conn->query('SELECT * FROM fromage;');
                 <button>OK</button>
             </div>
 
-            <select name="trier" id="trier_select">
-                <option value="" selected>Trier</option>
-                <option value="">Ordre alphabétique A-Z</option>
-                <option value="">Ordre alphabétique Z-A</option>
-                <option value="">Département</option>
-                <option value="">Lait</option>
-                <option value="">Note</option>
-            </select>
+            <form action="index.php?page=fromage">
+                <select name="trier" id="trier_select">
+                    <option value="" selected>Trier</option>
+                    <option value="A-Z">Ordre alphabétique A-Z</option>
+                    <option value="Z-A">Ordre alphabétique Z-A</option>
+                    <option value="dep">Département</option>
+                    <option value="lait">Lait</option>
+                    <option value="note">Note</option>
+                </select>
+            </form>
+
         </div>
 
         <div class="global_container">
 
             <div class="container_fromage">
-                <?php while ($req = $reqFromage->fetch()) { ?>
+                <?php foreach ($fromages as $req) { ?>
 
                     <form action="index.php?page=detail" method="POST" class="form">
                         <button type="submit" class="button_detail" name="form_detail">

@@ -15,8 +15,7 @@ Autoload::charger();
 //chargement FrontControleur
 require_once 'controleur/frontControleur.php';
 
-//$cont = new FrontControleur();
-//$cont->frontRequest();
+$cont = new FrontControleur();
 
 //navigation
 
@@ -46,7 +45,7 @@ if (isset($_GET['page'])) {
             break;
 
         case "fromage":
-            require($vue['fromage']);
+            $cont->frontRequest();
             break;
 
         case "histoire":
