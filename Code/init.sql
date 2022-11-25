@@ -13,48 +13,58 @@ urlWikipedia varchar(100),
 lait varchar(30) NOT NULL,
 image varchar(60) NOT NULL,
 typePate varchar(40) NOT NULL,
-vinAssocie varchar(40) NOT NULL,
+vin varchar(40) NOT NULL,
 PRIMARY KEY (nom, departementFabrication)
 );
 
 CREATE TABLE Favori(
 nomFromage varchar(50),
-departementFromage varchar(3),
 idUtilisateur varchar(100),
 FOREIGN KEY (idUtilisateur) REFERENCES Utilisateur(eMail),
-FOREIGN KEY (nomFromage,departementFromage) REFERENCES Fromage(nom,departementFabrication),
-PRIMARY KEY (nomFromage, departementFromage, idUtilisateur)
+FOREIGN KEY (nomFromage) REFERENCES Fromage(nom),
+PRIMARY KEY (nomFromage, idUtilisateur)
 );
 
-CREATE TABLE Produire(
-nomFromage varchar(50),
-departementFromage varchar(3),
-idUtilisateur varchar(100),
+CREATE TABLE Vend(
+mailVendeur varchar(100),
 nomBoutique varchar(50) NOT NULL,
 ville varchar(30) NOT NULL,
-rue varchar(50) NOT NULL,
-codePostal char(5) NOT NULL,
-FOREIGN KEY (nomFromage,departementFromage) REFERENCES Fromage(nom,departementFabrication),
-FOREIGN KEY (idUtilisateur) REFERENCES Utilisateur(eMail),
-PRIMARY KEY (nomFromage, departementFromage, idUtilisateur)
+departement varchar(50),
+fromages varchar(150),
+FOREIGN KEY (fromages,departement) REFERENCES Fromage(nom,departementFabrication),
+FOREIGN KEY (mailVendeur) REFERENCES Utilisateur(eMail),
+PRIMARY KEY (mailVendeur)
 );
 
 CREATE TABLE Commenter(
 nomFromage varchar(50),
-departementFromage varchar(3),
-idUtilisateur varchar(100),
+user varchar(100),
 avis varchar(200),
-FOREIGN KEY (nomFromage,departementFromage) REFERENCES Fromage(nom,departementFabrication),
-FOREIGN KEY (idUtilisateur) REFERENCES Utilisateur(eMail),
-PRIMARY KEY (nomFromage, departementFromage, idUtilisateur, avis)
+FOREIGN KEY (nomFromage REFERENCES Fromage(nom),
+FOREIGN KEY (user) REFERENCES Utilisateur(eMail),
+PRIMARY KEY (nomFromage, user)
 );
 
 CREATE TABLE Noter(
 nomFromage varchar(50),
-departementFromage varchar(3),
-idUtilisateur varchar(100),
+user varchar(100),
 note numeric CHECK(note<=5),
-FOREIGN KEY (nomFromage,departementFromage) REFERENCES Fromage(nom,departementFabrication),
-FOREIGN KEY (idUtilisateur) REFERENCES Utilisateur(eMail),
-PRIMARY KEY (nomFromage, departementFromage, idUtilisateur)
+FOREIGN KEY (nomFromage REFERENCES Fromage(nom),
+FOREIGN KEY (user) REFERENCES Utilisateur(eMail),
+PRIMARY KEY (nomFromage, user)
+);
+
+
+CREATE TABLE DEPARTEMENT(
+nom varchar(50),
+numero varchar(3),
+image varchar(200),
+PRIMARY KEY(nom)
+);
+
+CREATE TABLE ITINERAIRE(
+nom varchar(50),
+fromageries varchar(200),
+FOREIGN KEY (fromageries) REFERENCES Vend(nomBoutique),
+PRIMARY KEY (nom)
 );
