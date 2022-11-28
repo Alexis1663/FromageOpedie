@@ -104,7 +104,7 @@ $mdp = "";
                         $mdp = $_POST['mdp'];
                         if (!empty($mail) || !empty($mdp)) {
                             if (filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-                                $requConnexionVerif = $conn->prepare('SELECT email FROM utilisateur WHERE email = :mail');
+                                $requConnexionVerif = $conn->prepare('SELECT email, motdepasse FROM utilisateur WHERE email = :mail');
                                 $requConnexionVerif->bindValue('mail', $mail);
                                 $return = $requConnexionVerif->fetch(PDO::FETCH_ASSOC);
 
