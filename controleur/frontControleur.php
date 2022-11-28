@@ -5,7 +5,7 @@
 //require_once('fromageControleur.php');
 //require_once('controleur/userControleur.php');
 //require_once('controleur/visitorControleur.php');
-
+require_once('config/config.php');
 
 class FrontControleur
 {
@@ -24,6 +24,15 @@ class FrontControleur
     // Traite une requête entrante
     public function frontRequest()
     {
+        global $vue;
+        //Page fromage
+        if(){
+            
+        }
+        else{
+            $fromages = $this->ctrlFromage->findAllFromages();
+        }
+        require_once($vue['fromage']);
     }
 
     /* Affiche une erreur

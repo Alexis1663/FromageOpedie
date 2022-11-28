@@ -3,24 +3,23 @@
 class Itineraire{
 
 	private string $nom;
-	private string $description;
 	private array $fromageries;
 
-	public function __construct(string $nom, string $description){
+	public function __construct(string $nom, array $fromageries){
 		$this->nom=$nom;
-		$this->description=$description;
+		$this->fromageries=$fromageries;
 	}
 
 	public function __getNom():string{
 		return $this->nom;
 	}
-
-	public function __getDescription():string{
-		return $this->description;
-	}
 	
 	public function __getFromageries():array{
         	return $this->fromageries;
-    	}
+    }
+
+	public function ajouterFromagerie($fromagerie){
+		$this->fromageries[]=$fromagerie;
+	}
 
 }

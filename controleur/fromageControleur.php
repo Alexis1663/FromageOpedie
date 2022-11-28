@@ -20,6 +20,7 @@ class FromageControleur
     public function findAllFromages()
     {
         $lesFromages = $this->fromageG->findAll();
+        return $lesFromages;
     }
 
     // Trie les fromages par ordre alphabétique inverse
