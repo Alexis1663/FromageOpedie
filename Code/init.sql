@@ -2,7 +2,7 @@ CREATE TABLE Utilisateur(
 eMail varchar(100) PRIMARY KEY,
 nom varchar(30) NOT NULL,
 prenom  varchar(30) NOT NULL,
-motDePasse varchar(70) NOT NULL,
+motDePasse varchar(255) NOT NULL,
 estFromager bool NOT NULL
 );
 
