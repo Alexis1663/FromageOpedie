@@ -110,14 +110,13 @@ $mdp = "";
 
                                 if ($return) {
                                     $mdpHash = $return['motdepasse'];
-                                    var_dump($mdpHash);
                                     if (password_verify($mdp, $mdpHash)) {
-                                        echo "Connexion réussi !!!";
+                                        echo "Connexion réussie !!!";
                                     } else {
                                         echo "Adresse mail ou mot de passe incorrect !!!";
                                     }
                                 } else {
-                                    echo "1Adresse mail ou m    ot de passe incorrect !!!";
+                                    echo "Adresse mail ou mot de passe incorrect !!!";
                                 }
                             } else {
                                 echo "Adresse mail invalide !!!";
