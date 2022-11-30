@@ -25,7 +25,7 @@ FOREIGN KEY (nomFromage) REFERENCES Fromage(nom),
 PRIMARY KEY (nomFromage, idUtilisateur)
 );
 
-CREATE TABLE Vend(
+CREATE TABLE Vendre(
 mailVendeur varchar(100),
 nomBoutique varchar(50) NOT NULL,
 ville varchar(30) NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE Commenter(
 nomFromage varchar(50),
 user varchar(100),
 avis varchar(200),
-FOREIGN KEY (nomFromage REFERENCES Fromage(nom),
+FOREIGN KEY (nomFromage) REFERENCES Fromage(nom),
 FOREIGN KEY (user) REFERENCES Utilisateur(eMail),
 PRIMARY KEY (nomFromage, user)
 );
@@ -49,7 +49,7 @@ CREATE TABLE Noter(
 nomFromage varchar(50),
 user varchar(100),
 note numeric CHECK(note<=5),
-FOREIGN KEY (nomFromage REFERENCES Fromage(nom),
+FOREIGN KEY (nomFromage) REFERENCES Fromage(nom),
 FOREIGN KEY (user) REFERENCES Utilisateur(eMail),
 PRIMARY KEY (nomFromage, user)
 );
