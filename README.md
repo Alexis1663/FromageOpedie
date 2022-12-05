@@ -1,6 +1,6 @@
-# **FROMAGEOPEDIE**
+# **CL Cournon TT News**
 
-## Bonjour et bienvenue sur le GitHub du projet FromageOpédie ! 👋
+## Bonjour et bienvenue sur le GitHub du projet CL Cournon TT News !  👋
 
 *******
 
@@ -15,11 +15,11 @@ Sommaire
 
 <div id='acces'/>
 
-### Profiter dès maintenant d'un accès anticipé à FromageOpédie
+### Profiter dès maintenant d'un accès anticipé au site de News du CL Cournon TT
 
-**[Accès](https://fromage-opedie.herokuapp.com/html/accueil.html)** : Appuyer sur le lien pour accéder directement au site web !
+**Accès** : Télécharger le code dans la branche "main" pour avoir le code source du site
 
-> **Warning**: Le site n'est pas encore adapté à une utilisation sur mobile 
+> **Warning**: Le site n'est pas encore adapté à une utilisation sur mobile  
 *******
 
 <div id='progression'/>
@@ -28,7 +28,7 @@ Sommaire
 
 ![](https://geps.dev/progress/60)
 
-📆  _Fin du projet prévue :_ 12 Janvier 2022
+📆  _Fin du projet prévue :_ Décembre 2022
 
 *******
 
@@ -36,12 +36,9 @@ Sommaire
 
 ### **Présentation**
 
-FromageOpédie : l'Encyclopédie du fromage futuriste !  
-
-FromageOpédie est un site Web qui référence et note tous les types de fromages existants.  
-Depuis sa création il y a environ 8000 ans, la majorité des consommateurs de fromage n'ont utilisé que le bouche à oreille pour choisir les éléments de leur plateau ce qui peut limiter leurs choix.  
-Notre site permet de retrouver et partager des avis sur les fromages référencés, grâce aux avis des utilisateurs. A l'aide des différentes options de recherche, il sera possible de classer et trier chaque produit afin de retrouver celui qui nous convient le mieux.  
-Le bénéfice sera à long terme d'accroître la connaissance globale sur le fromage.  
+Le CL Cournon TT est une association sportive de la ville de Cournon d'Auvergne.  
+Le club de tennis de table doit pour tenir au courant ses licénciés des résultats sportifs rester le plus connecté possible.  
+Ainsi, nous avons décidé de concevoir un petit blog de news avec pour langage de programmation majoritaire : le PHP ainsi que l'hébergement de données sur pĥpmyadmin.  
 
 *******
 
@@ -49,49 +46,38 @@ Le bénéfice sera à long terme d'accroître la connaissance globale sur le fro
 
 ## Fonctionnalités
 
-- Page Fromage
-    - Tri des fromages
-        - Par ordre alphabétique
-        - Par ordre alphabétique inverse
-        - Par note moyenne
-        - Par département
-        - Par type de lait
-        - Recherche par le nom d'un fromage
-    - Avis des utilisateurs
-        - Noter avec étoiles une page de fromage
-        - Commenter une page de fromage
-    - Système de favoris
-        - Ajout d'un fromage en favori pour les utilisateurs
-- Page Accueil
-    - Inscription (création de compte)
-    - Connexion (passage du statut visiteur au statut utilisateur)
-- Page Carte
-    - Recherche des fromages présents dans un département
-    - Affichage d'itinéraires fromagers 
-- Page Histoire
-    - Le cycle de vie du fromage pour les enfants (texte imagé + graphe)
-    - L'histoire du fromage pour les grands (vidéo)
+En tant que simple visiteur, vous pourrez :  
+- Consulter l'ensemble des news 
+- Rechercher une news à l'aide de sa date
 
+En tant qu'utilisateur, vous pourrez en plus :
+- Commenter la page d'une news
+
+En tant qu'administrateur, vous aurrez aussi le droit : 
+- D'ajouter une news au blog  
+- De supprimer une news du blog   
+
+*******
 
 ## Ressources
 
 - Temps
-    - 12 Septembre au 12 Janvier
+    - Novembre à Décembre 2022  
 - Matériel
-    - Ordinateurs portables
-    - Hébergeur Web en ligne : Heroku
+    - Ordinateurs fixes de l'IUT et portables personnels   
 - Langages utilisés
     - PHP
     - HTML
     - CSS
     - SQL
 - Personnes 
-    - 4 étudiants en BUT Informatique
+    - 2 étudiants en BUT Informatique
 
+*******
 
 ## Détails de conception
 
-> En cours d'ajout : Images des diagrammes (UML + BDD)
+> En cours d'ajout : Schéma de conception
 
 
 *******
@@ -101,4 +87,4 @@ Le bénéfice sera à long terme d'accroître la connaissance globale sur le fro
 ### Auteurs
 
 Étudiants 2ème Annnée - BUT Informatique - IUT Clermont Auvergne - 2022-2023  
-`BESSON JEREMY` - `BRODA Lou` - `CARREAU Alexis` - `YOUSSE François`
+`BRODA Lou` - `CARREAU Alexis`
