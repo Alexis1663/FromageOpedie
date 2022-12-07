@@ -99,7 +99,7 @@ Le bénéfice sera à long terme d'accroître la connaissance globale sur le fro
 
 > Diagrammes de Classes   
 
-![diagramme_classe](/imgREADME/Diagramme_de_Classe (1).pdf)    
+![diagramme_classe](/imgREADME/Diagramme_de_classe.pdf)    
 
 > Diagrammes de Séquence    
 
