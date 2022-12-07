@@ -88,14 +88,26 @@ include_once('controleur/frontControleur.php');
                 <button>OK</button>
             </div>
 
-            <form action="index.php?page=fromage">
+            <form action="index.php?page=from">
                 <select name="trier" id="trier_select">
-                    <option value="" selected>Trier</option>
-                    <option value="A-Z">Ordre alphabétique A-Z</option>
-                    <option value="Z-A">Ordre alphabétique Z-A</option>
-                    <option value="dep">Département</option>
-                    <option value="lait">Lait</option>
-                    <option value="note">Note</option>
+                    <button href="index.php?trie=none">
+                        <option selected>Trier</option>
+                    </button>
+                    <a href="index.php?trie=A-Z">
+                        <option>Ordre alphabétique A-Z</option>
+                    </a>
+                    <a href="index.php?trie=Z-A">
+                        <option>Ordre alphabétique Z-A</option>
+                    </a>
+                    <a href="index.php?trie=dep">
+                        <option>Département</option>
+                    </a>
+                    <a href="index.php?trie=lait">
+                        <option>Lait</option>
+                    </a>
+                    <a href="index.php?trie=note">
+                        <option>Note</option>
+                    </a>
                 </select>
             </form>
 

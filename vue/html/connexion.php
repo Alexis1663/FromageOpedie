@@ -104,20 +104,20 @@ $mdp = "";
                         $mdp = $_POST['mdp'];
                         if (!empty($mail) || !empty($mdp)) {
                             if (filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-                                $requConnexionVerif = $conn->prepare('SELECT email FROM utilisateur WHERE email = :mail');
-                                $requConnexionVerif->bindValue('mail', $mail);
+                                $requConnexionVerif = $conn->prepare('SELECT email,motdepasse FROM utilisateur WHERE email = :mail');
+                                $requConnexionVerif->bindValue(':mail', $mail);
+                                $requConnexionVerif->execute();
                                 $return = $requConnexionVerif->fetch(PDO::FETCH_ASSOC);
 
                                 if ($return) {
                                     $mdpHash = $return['motdepasse'];
-                                    var_dump($mdpHash);
                                     if (password_verify($mdp, $mdpHash)) {
                                         echo "Connexion réussi !!!";
                                     } else {
                                         echo "Adresse mail ou mot de passe incorrect !!!";
                                     }
                                 } else {
-                                    echo "1Adresse mail ou m    ot de passe incorrect !!!";
+                                    echo "Adresse mail ou mot de passe incorrect !!!";
                                 }
                             } else {
                                 echo "Adresse mail invalide !!!";
