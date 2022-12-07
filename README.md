@@ -80,10 +80,10 @@ Le bénéfice sera à long terme d'accroître la connaissance globale sur le fro
     - Ordinateurs portables
     - Hébergeur Web en ligne : Heroku
 - Langages utilisés
-    - PHP ![](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=php&logoColor=white)
-    - HTML
-    - CSS
-    - SQL
+    - PHP ![](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+    - HTML ![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+    - CSS ![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+    - SQL ![](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 - Personnes 
     - 4 étudiants en BUT Informatique
 
