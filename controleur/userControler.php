@@ -6,8 +6,7 @@ class userControleur{
     private $vue;
     private $userG;
 
-    public function __construct(User $user){
-        $this->user=$user;
+    public function __construct(){
        //$this->vue=new Vue(); Pas vraiment sur de cette ligne j'ai mi ça là en attendant de voir comment on fait pour les vues
         
         $host = 'ec2-34-246-86-78.eu-west-1.compute.amazonaws.com';
