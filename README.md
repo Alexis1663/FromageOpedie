@@ -92,6 +92,16 @@ Le bénéfice sera à long terme d'accroître la connaissance globale sur le fro
 
 > En cours d'ajout : Images des diagrammes (UML + BDD)
 
+> Modèle de Conception MVC
+
+> Diagrammes de Classes
+
+> Diagrammes de Séquence
+
+> Diagrammes de Cas d'utilisation
+
+> Diagrammes d'Activités
+
 *******
 
 <div id='auteurs'/>
