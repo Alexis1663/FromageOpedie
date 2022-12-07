@@ -108,6 +108,7 @@ include_once('controleur/frontControleur.php');
                     <a href="index.php?trie=note">
                         <option>Note</option>
                     </a>
+                    
                 </select>
             </form>
 

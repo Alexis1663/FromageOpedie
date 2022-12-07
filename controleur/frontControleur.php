@@ -21,6 +21,7 @@ class FrontControleur
     {
         global $vue;
         //Page fromage
+
         if (isset($_GET['trie'])) {
             $trie = $_GET['trie'];
             switch ($trie) {
