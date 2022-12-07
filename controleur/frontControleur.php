@@ -1,10 +1,5 @@
 <?php
 
-//require_once('controleur/accueilControleur.php');
-//require_once('controleur/adminControleur.php');
-//require_once('fromageControleur.php');
-//require_once('controleur/userControleur.php');
-//require_once('controleur/visitorControleur.php');
 require_once('config/config.php');
 
 class FrontControleur
@@ -26,11 +21,32 @@ class FrontControleur
     {
         global $vue;
         //Page fromage
-        if(){
-            
-        }
-        else{
+
+        if (isset($_GET['trie'])) {
+            $trie = $_GET['trie'];
+            switch ($trie) {
+                case "A-Z":
+                    $fromages = $this->ctrlFromage->findAllFromages();
+                    break;
+                case  "Z-A":
+                    $fromages = $this->ctrlFromage->sortZAFromages();
+                    break;
+                case "dep":
+                    $fromages = $this->ctrlFromage->sortDepFromages();
+                    break;
+                case "lait":
+                    $fromages = $this->ctrlFromage->sortLaitFromages();
+                    break;
+                    //case "note":
+                    //  $fromages = $this->ctrlFromage->findAllFromages();
+                    //break;
+                case "none":
+                    $fromages = $this->ctrlFromage->findAllFromages();
+                    break;
+            }
+        } else {
             $fromages = $this->ctrlFromage->findAllFromages();
+            echo "error!!!!";
         }
         require_once($vue['fromage']);
     }
