@@ -35,7 +35,7 @@ Sommaire
 
 ### **Présentation**
 
-FromageOpédie : l'Encyclopédie du fromage futuriste !  
+FromageOpédie : l'Encyclopédie du fromage futuriste ! 🧀    
 
 FromageOpédie est un site Web qui référence et note tous les types de fromages existants.  
 Depuis sa création il y a environ 8000 ans, la majorité des consommateurs de fromage n'ont utilisé que le bouche à oreille pour choisir les éléments de leur plateau ce qui peut limiter leurs choix.  
@@ -80,7 +80,7 @@ Le bénéfice sera à long terme d'accroître la connaissance globale sur le fro
     - Ordinateurs portables
     - Hébergeur Web en ligne : Heroku
 - Langages utilisés
-    - PHP
+    - PHP ![](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=php&logoColor=white)
     - HTML
     - CSS
     - SQL
