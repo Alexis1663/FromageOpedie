@@ -90,12 +90,10 @@ Le bénéfice sera à long terme d'accroître la connaissance globale sur le fro
 
 ## Détails de conception
 
-> En cours d'ajout : Images des diagrammes (UML + BDD)
-
 > Modèle de Conception MVC
 
 > Diagrammes de Classes
-
+![diagramme_classe](/imgREADME/Diagramme_de_Classe (1).pdf)
 > Diagrammes de Séquence
 
 > Diagrammes de Cas d'utilisation
