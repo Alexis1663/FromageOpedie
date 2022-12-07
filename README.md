@@ -92,14 +92,23 @@ Le bénéfice sera à long terme d'accroître la connaissance globale sur le fro
 
 > Modèle de Conception MVC
 
-> Diagramme MCD & MLD
+> Diagramme MCD & MLD   
+
 ![diagramme_mcd](/imgREADME/MCD_FromageOpedie-1.drawio.png)   
 ![diagramme_mld](/imgREADME/MLD_FromageOpedie-1.drawio.png)   
 
-> Diagrammes de Classes
+> Diagrammes de Classes   
+
 ![diagramme_classe](/imgREADME/Diagramme_de_Classe (1).pdf)    
 
-> Diagrammes de Séquence
+> Diagrammes de Séquence    
+
+![diagramme_sequence1](/imgREADME/diagrammes_sequence_sInscrire.pdf)   
+![diagramme_sequence2](/imgREADME/MLD_FromageOpedie-1.drawio.png)  
+![diagramme_sequence3](/imgREADME/MCD_FromageOpedie-1.drawio.png)   
+![diagramme_sequence4](/imgREADME/MLD_FromageOpedie-1.drawio.png)  
+![diagramme_sequence5](/imgREADME/MCD_FromageOpedie-1.drawio.png)   
+![diagramme_sequence6](/imgREADME/MLD_FromageOpedie-1.drawio.png)  
 
 > Diagrammes de Cas d'utilisation
 
