@@ -105,7 +105,7 @@ Le bénéfice sera à long terme d'accroître la connaissance globale sur le fro
 
 ![Diagramme de séquence : s'inscrire](/imgREADME/diagrammes_sequence_sInscrire.pdf)   
 ![Diagramme de séquence : se connecter](/imgREADME/diagrammes_sequence_seConnecter.pdf)  
-![Diagramme de séquence : connexion](/imgREADME/Diagramme de séquence connexion.pdf)   
+![Diagramme de séquence : connexion](/imgREADME/diagramme_sequence_connexion.pdf)   
 ![Diagramme de séquence : consulter page des favoris](/imgREADME/diagrammes_sequence_ConsulterPageFavoris.pdf)   
 ![Diagramme de séquence : consulter page histoire](/imgREADME/diagrammes_sequence_ConsulterPageHistoire.pdf)   
 ![Diagramme de séquence : consulter carte des fromages](/imgREADME/diagrammes_sequence_ConsulterCarteFromages.pdf)   
@@ -114,8 +114,8 @@ Le bénéfice sera à long terme d'accroître la connaissance globale sur le fro
 ![Diagramme de séquence : ajouter un fromage aux favoris](/imgREADME/DSS_AjouterFavoris.pdf)     
 ![Diagramme de séquence : trier les fromages](/imgREADME/diagrammes_sequence_TrierFromages.pdf)    
 ![Diagramme de séquence : noter un fromage](/imgREADME/diagrammes_sequence_NoterLaPageFromage.pdf)   
-![Diagramme de séquence : mettre un commentaire](/imgREADME/Diagramme de séquence mettre un commentaire.pdf)    
-![Diagramme de séquence : ajouter un fromage à un itinéraire](/imgREADME/Diagramme de séquence ajouter un fromage a itinéraire.pdf)     
+![Diagramme de séquence : mettre un commentaire](/imgREADME/diagramme_sequence_mettre_commentaire.pdf)    
+![Diagramme de séquence : ajouter un fromage à un itinéraire](/imgREADME/diagramme_sequence_ajouter_fromage_itineraire.pdf)     
 
 > Diagrammes de Cas d'utilisation
 
