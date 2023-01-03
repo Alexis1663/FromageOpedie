@@ -8,7 +8,6 @@ estFromager bool NOT NULL
 
 CREATE TABLE Fromage(
 departementFabrication varchar(60),
-departementFabrication varchar(60),
 nom varchar(60),
 urlWikipedia varchar(100),
 lait varchar(30) NOT NULL,
