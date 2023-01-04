@@ -3,7 +3,7 @@
 require_once('modele/userGateway.php');
 require_once('modele/connection.php');
 require_once('config/validation.php');
-require_once('modele/user.php');
+require_once('modele/User.php');
 
 class MdlUser
 {
