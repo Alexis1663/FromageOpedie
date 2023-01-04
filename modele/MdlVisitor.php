@@ -3,7 +3,7 @@
 
 require_once('modele/visitorGateway.php');
 require_once('modele/fromageGateway.php');
-require_once('modele/DepartementGateway.php');
+require_once('modele/departementGateway.php');
 require_once('modele/connection.php');
 require_once('config/validation.php');
 require_once('modele/visitor.php');
