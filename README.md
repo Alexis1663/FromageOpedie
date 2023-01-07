@@ -25,7 +25,7 @@ Sommaire
 
 🚧  __EN PROGRESSION__
 
-![](https://geps.dev/progress/60)
+![](https://geps.dev/progress/85)
 
 📆  _Fin du projet prévue :_ 12 Janvier 2022
 
@@ -96,11 +96,7 @@ Le bénéfice sera à long terme d'accroître la connaissance globale sur le fro
 > Diagramme MCD & MLD   
 
 ![diagramme_mcd](/imgREADME/MCD_FromageOpedie-1.drawio.png)   
-![diagramme_mld](/imgREADME/MLD_FromageOpedie-1.drawio.png)   
-
-> Diagrammes de Classes   
-
-![diagramme_classe](/imgREADME/Diagramme_de_classe.pdf)    
+![diagramme_mld](/imgREADME/MLD_FromageOpedie-1.drawio.png)     
 
 > Diagrammes de Séquence    
 
